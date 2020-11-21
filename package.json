@@ -1,4 +1,5 @@
 {
+  "homepage":"http://chaolic6505.github.io/portfoliofinal",
   "name": "portfolio_final",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +10,6 @@
     "bootstrap": "^4.5.3",
     "framer-motion": "^2.9.4",
     "gh-pages": "^3.1.0",
-    "i": "^0.3.6",
     "npm": "^6.14.9",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build",
+    "deploy":"gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
