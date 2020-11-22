@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
+import { Colors } from '../../styles/color';
+import { Fonts } from '../../styles/fonts';
 
 export const Nav = styled.nav`
-	background-image: linear-gradient(to right, #545352 0%, #304352 100%);
+	background-image: ${Colors.Primary};
 	height: 80px;
 	display: flex;
-    justify-content:space-around;
+    justify-content:flex-end;
     align-items:baseline;
     font-size:1rem;
     position:sticky;
@@ -22,14 +24,13 @@ export const NavbarContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
-
 	z-index: 1;
 	width: 100%;
-	padding: 0px 24px;
+	padding: 0px 20px;
 	max-width: 1100px;
 	@media screen and (max-width: 768px) {
-		justify-content: flex-start;
-		padding: 10px 24px;
+		justify-content: space-between;
+		align-items: center;
 	}
 `;
 
@@ -41,7 +42,7 @@ export const NavLogo = styled(LinkRouter)`
 	display: flex;
 	align-items: center;
 
-	font-family: 'IBM Plex Mono';
+	font-family: ${Fonts.Primary};
 	text-decoration: none;
 `;
 
@@ -49,10 +50,9 @@ export const MobileIcon = styled.div`
 	display: none;
 	@media screen and (max-width: 768px) {
 		display: block;
-		align-items: center;
 
 		top: 1;
-		right: 0;
+
 		transform: translate (-100%, 60%);
 		font-size: 2rem;
 		cursor: pointer;
@@ -64,14 +64,9 @@ export const NavMenu = styled.ul`
 	display: flex;
 	align-items: center;
 	list-style: none;
-	
-    padding:0; !important
-    margin:0; !important
-	
 
 	margin-bottom: 0;
-final
-	@media screen and (max-width: 768px) {
+	final @media screen and (max-width: 768px) {
 		display: none;
 	}
 `;
@@ -79,7 +74,10 @@ final
 export const NavItem = styled.li`
 	height: 30px;
 	color: #fbfbff;
-	font-family: 'IBM Plex Mono';
+	font-family: ${Fonts.Primary};
+	@media screen and (max-width: 768px) {
+		display: none;
+	
 `;
 
 export const NavLinks = styled(LinkScroll)`
@@ -102,10 +100,15 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavImageNav = styled.nav`
 	display: flex;
-	align-items: flex-end;
+
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
+`;
+
+export const NavImageNav2 = styled.nav`
+	display: flex;
+	margin-left: 20px;
 `;
 
 export const NavImage = styled.img`

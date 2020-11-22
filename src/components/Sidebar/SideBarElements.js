@@ -2,17 +2,19 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
+import { Colors } from '../../styles/color';
+import { Fonts } from '../../styles/fonts';
 
 export const SidebarContainer = styled.aside`
 	position: fixed;
 	z-index: 999;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+	background-image: ${Colors.Second};
 	display: grid;
 	align-items: center;
 	top: 0;
-	left: 0;
+	padding: 100px;
 	transition: 0.3s ease-in-out;
 	opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 	top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -56,12 +58,12 @@ export const SidebarLinks = styled(LinkRouter)`
 	transition: 0.2s ease-in-out;
 	color: #6ad5cb;
 	cursor: pointer;
-	font-family: 'IBM Plex Mono';
+	font-family: ${Fonts.Primary};
 	flex-grow: 1;
 
 	&:hover,
 	&:active {
-		color: #00487C;
+		color: #00487c;
 		text-decoration: none;
 		font-weight: 900;
 		transition: 0.3s ease-in-out;

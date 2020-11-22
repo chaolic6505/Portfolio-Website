@@ -10,6 +10,7 @@ import {
 	NavLinks,
 	NavImage,
 	NavImageNav,
+	NavImageNav2,
 } from './NavbarElements';
 import myImage from '../../images/logo_now.png';
 import { motion } from 'framer-motion';
@@ -36,24 +37,23 @@ const NavBar = ({ toggle }) => {
 		<>
 			<Nav>
 				<NavbarContainer>
-					<motion.div
-						variants={containerVariants}
-						initial="hidden"
-						animate="visible"
-						transition={{ delay: 1.5, duration: 1.5 }}
-					>
-						<NavImageNav>
-							<NavLogo to="/">
-								<NavImage src={myImage} />
-							</NavLogo>
-						</NavImageNav>
-					</motion.div>
-
 					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
-
+		<motion.div
+							variants={containerVariants}
+							initial="hidden"
+							animate="visible"
+							transition={{ delay: 2.2, duration: 1.0 }}
+						>
+							<NavImageNav2>
+								<NavLogo to="/">
+									<NavImage src={myImage} />
+								</NavLogo>
+							</NavImageNav2>
+						</motion.div>
 					<NavMenu>
+				
 						<motion.div
 							transition={{ delay: 0.3, type: 'spring', stiffness: 100 }}
 							variants={divVariants}
@@ -95,19 +95,6 @@ const NavBar = ({ toggle }) => {
 							</NavItem>
 						</motion.div>
 					</NavMenu>
-
-					<motion.div
-						variants={containerVariants}
-						initial="hidden"
-						animate="visible"
-						transition={{ delay: 2.2, duration: 1.0 }}
-					>
-						<NavImageNav>
-							<NavLogo to="/">
-								<NavImage src={myImage} />
-							</NavLogo>
-						</NavImageNav>
-					</motion.div>
 				</NavbarContainer>
 			</Nav>
 		</>
