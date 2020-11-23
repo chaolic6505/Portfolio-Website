@@ -8,7 +8,7 @@ export const Nav = styled.nav`
 	background-image: ${Colors.Primary};
 	height: 80px;
 	display: flex;
-    justify-content:flex-end;
+    justify-content:space-between;
     align-items:baseline;
     font-size:1rem;
     position:sticky;
@@ -23,11 +23,11 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
+	//align-items: stretch;
 	z-index: 1;
 	width: 100%;
 	padding: 0px 20px;
-	max-width: 1100px;
+	
 	@media screen and (max-width: 768px) {
 		justify-content: space-between;
 		align-items: center;
@@ -44,6 +44,8 @@ export const NavLogo = styled(LinkRouter)`
 
 	font-family: ${Fonts.Primary};
 	text-decoration: none;
+
+	
 `;
 
 export const MobileIcon = styled.div`
@@ -64,6 +66,7 @@ export const NavMenu = styled.ul`
 	display: flex;
 	align-items: center;
 	list-style: none;
+	justify-content: flex-end;
 
 	margin-bottom: 0;
 	final @media screen and (max-width: 768px) {
@@ -108,7 +111,6 @@ export const NavImageNav = styled.nav`
 
 export const NavImageNav2 = styled.nav`
 	display: flex;
-	margin-left: 20px;
 `;
 
 export const NavImage = styled.img`

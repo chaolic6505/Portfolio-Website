@@ -40,6 +40,7 @@ const NavBar = ({ toggle }) => {
 					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
+		
 		<motion.div
 							variants={containerVariants}
 							initial="hidden"
@@ -52,6 +53,7 @@ const NavBar = ({ toggle }) => {
 								</NavLogo>
 							</NavImageNav2>
 						</motion.div>
+					
 					<NavMenu>
 				
 						<motion.div
