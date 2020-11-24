@@ -3,6 +3,7 @@ import Video from '../../videos/bgvideo.mp4';
 import Typing from 'react-typing-animation';
 import Typed from 'react-typed';
 import RubberBand from 'react-reveal/RubberBand';
+import { AnimatedIcon } from '../common/AnimatedIcon';
 //import { Link } from 'react-router-dom';
 import {
 	InfoContainer,
@@ -16,7 +17,7 @@ import {
 	SociaIconLink,
 	IconContainer,
 	IconLink,
-	IconDiv
+	IconDiv,
 } from './MainInfoElements';
 const InfoSection = () => {
 	return (
@@ -27,31 +28,22 @@ const InfoSection = () => {
 
 			<InfoContent>
 				<ContentH1>
-					<Typed strings={['Hi, I am Steven Chen']} startDelay={1500} typeSpeed={100} />
+					<Typed  strings={['Hi, I am Steven Chen']} startDelay={1500} typeSpeed={100} />
 				</ContentH1>
 				<ContentH2>
 					<Typed
 						strings={['Full Stack Developer', 'UX/UI Designer']}
 						typeSpeed={100}
-						backDelay={900}
+						backDelay={200}
 						backSpeed={30}
-						startDelay={4000}
+						startDelay={3500}
 						showCursor={false}
 						loop
 					/>
 				</ContentH2>
 
 				<IconContainer>
-				
-					<IconLink href="https://github.com/chaolic6505">
-						<SociaIconGit />
-					</IconLink>
-					<IconLink href="https://www.linkedin.com/in/steven-chen-670535179/">
-						<SociaIconLink />
-					</IconLink>
-					<IconLink href="https://www.facebook.com/cl.chen.79/">
-						<SociaIconFB />
-					</IconLink>
+					<AnimatedIcon />
 				</IconContainer>
 			</InfoContent>
 		</InfoContainer>

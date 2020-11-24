@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { AnimatedLink } from '../common/AnimatedLink/index';
 import {
 	Nav,
 	NavbarContainer,
@@ -40,22 +41,21 @@ const NavBar = ({ toggle }) => {
 					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
-		
-		<motion.div
-							variants={containerVariants}
-							initial="hidden"
-							animate="visible"
-							transition={{ delay: 2.2, duration: 1.0 }}
-						>
-							<NavImageNav2>
-								<NavLogo to="/">
-									<NavImage src={myImage} />
-								</NavLogo>
-							</NavImageNav2>
-						</motion.div>
-					
+
+					<motion.div
+						variants={containerVariants}
+						initial="hidden"
+						animate="visible"
+						transition={{ delay: 1.6, duration: 1.0 }}
+					>
+						<NavImageNav2>
+							<NavLogo to="/">
+								<NavImage src={myImage} />
+							</NavLogo>
+						</NavImageNav2>
+					</motion.div>
+
 					<NavMenu>
-				
 						<motion.div
 							transition={{ delay: 0.3, type: 'spring', stiffness: 100 }}
 							variants={divVariants}
@@ -63,7 +63,9 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="home">Home</NavLinks>
+								<NavLinks to="home">
+									<AnimatedLink name={'Home'} />
+								</NavLinks>
 							</NavItem>
 						</motion.div>
 						<motion.div
@@ -73,7 +75,9 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="project">Project</NavLinks>
+								<NavLinks to="project">
+									<AnimatedLink name={'Project'} />
+								</NavLinks>
 							</NavItem>
 						</motion.div>
 						<motion.div
@@ -83,7 +87,9 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="contact">Contact</NavLinks>
+								<NavLinks to="contact">
+									<AnimatedLink name={'Contact'} />
+								</NavLinks>
 							</NavItem>
 						</motion.div>
 						<motion.div
@@ -93,7 +99,10 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="service">Service</NavLinks>
+								<NavLinks to="service">
+									{' '}
+									<AnimatedLink name={'Service'} />
+								</NavLinks>
 							</NavItem>
 						</motion.div>
 					</NavMenu>

@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
 	z-index: 1;
 	width: 100%;
 	padding: 0px 20px;
-	
+
 	@media screen and (max-width: 768px) {
 		justify-content: space-between;
 		align-items: center;
@@ -44,8 +44,6 @@ export const NavLogo = styled(LinkRouter)`
 
 	font-family: ${Fonts.Primary};
 	text-decoration: none;
-
-	
 `;
 
 export const MobileIcon = styled.div`
@@ -78,6 +76,10 @@ export const NavItem = styled.li`
 	height: 30px;
 	color: #fbfbff;
 	font-family: ${Fonts.Primary};
+
+	&, &:before, &:after {
+  box-sizing: border-box;
+}
 	@media screen and (max-width: 768px) {
 		display: none;
 	
@@ -92,6 +94,7 @@ export const NavLinks = styled(LinkScroll)`
 	text-decoration: none;
 	padding: 0 1rem;
 	font-size: 1.7rem;
+	font-weight: bold;
 
 	&:hover {
 		color: #b5fed9;

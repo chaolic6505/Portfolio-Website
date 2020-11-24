@@ -3,8 +3,8 @@ import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
 export const SectionContainer = styled.div`
-	margin-top: 1%;
-	height: 1500px;
+	
+	height: 100rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -70,7 +70,7 @@ export const ProjectH1 = styled.h1`
 	font-size: 2.5rem;
 	margin-bottom: 60px;
 	font-family: ${Fonts.Primary};
-
+font-weight: 900;
 	@media screen and (max-width: 480px) {
 		font-size: 2rem;
 	}

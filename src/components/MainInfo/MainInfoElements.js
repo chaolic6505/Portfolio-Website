@@ -46,13 +46,13 @@ export const InfoContent = styled.div`
     z-index: 1;
 	max-width: 1200px;
 	min-width: 1000px;
-
+align-items: center;
     position:relative;
 	display: flex;
 	padding: 0px 24px;
 	flex-direction:column;
 	align-self:flex-self;
-	margin-top:15%;
+	margin-top:10%;
 	
 
 		
@@ -70,11 +70,11 @@ export const ContentH1=styled.h1`
   font-size:45px;
   text-align:center;
   font-family:${Fonts.Second};
-background: -webkit-linear-gradient(#eee, ${Colors.H1});
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom:10%;
-word-spacing:10px;
+// background: -webkit-linear-gradient(#eee, ${Colors.H1});
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+  margin-bottom:8%;
+word-spacing:5px;
   letter-spacing:10px;
 	
 	@media screen and (max-width: 768px) {
@@ -102,6 +102,7 @@ min-height:50px;
 background: -webkit-linear-gradient(#eee, ${Colors.H2});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom:8%;
   
 
 	@media screen and (max-width: 768px) {
@@ -185,18 +186,18 @@ export const IconLink= styled.a`
 export const IconContainer = styled.div`
     min-height:150px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	position: relative;
 	padding:0 30%;
 
 	
 	@media screen and (max-width: 768px) {
-		 justify-content: space-evenly;
+		 justify-content: space-between;
 	}
 		@media screen and (max-width: 480px) {
 			
-			 justify-content: space-evenly;
+			 justify-content: space-between;
 	}
 
 	
