@@ -99,9 +99,9 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="contact">
+								<NavLinks to="service">
 									{' '}
-									<AnimatedLink name={'Contact'} />
+									<AnimatedLink name={'Services'} />
 								</NavLinks>
 							</NavItem>
 						</motion.div>

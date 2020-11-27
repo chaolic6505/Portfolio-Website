@@ -9,7 +9,7 @@ export const SkillBar = () => {
 				</div>
 			</div>
 			<div class="skillBar">
-				<h4>JavaScript</h4>
+				<h4>Vannilla JavaScript</h4>
 				<div class="skillBarContainer">
 					<div class="skillBarValue value-95"></div>
 				</div>

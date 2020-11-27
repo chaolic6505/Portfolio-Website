@@ -58,7 +58,7 @@ const Contact = ({
 										spy={true}
 										exact="true"
 										offset={-80}
-									>Contact Me</Button>
+									>Let's chat</Button>
 								</BtnWrapper>
 							</TextWrapper>
 						</Column1>

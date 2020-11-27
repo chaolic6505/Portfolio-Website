@@ -6,6 +6,7 @@ import MainInfo from '../components/MainInfo';
 import ProjectSection from '../components/ProjectSection';
 import Contact from '../components/Contact';
 import { contactObjOne } from '../components/Contact/Data';
+import Services from '../components/Services';
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Home = () => {
 			<MainInfo />
 			<Contact {...contactObjOne} />
 			<ProjectSection />
-			
+			<Services /> 
 		</>
 	);
 };
