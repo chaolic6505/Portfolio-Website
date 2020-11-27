@@ -2,7 +2,6 @@ import React from 'react';
 import Video from '../../videos/bgvideo.mp4';
 import Typed from 'react-typed';
 import { AnimatedIcon } from '../common/AnimatedIcon';
-//import { Link } from 'react-router-dom';
 import {
 	InfoContainer,
 	InfoBg,
