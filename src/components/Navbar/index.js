@@ -75,8 +75,8 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="project">
-									<AnimatedLink name={'Project'} />
+								<NavLinks to="about">
+									<AnimatedLink name={'About'} />
 								</NavLinks>
 							</NavItem>
 						</motion.div>
@@ -87,8 +87,8 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="contact">
-									<AnimatedLink name={'Contact'} />
+								<NavLinks to="project">
+									<AnimatedLink name={'Project'} />
 								</NavLinks>
 							</NavItem>
 						</motion.div>
@@ -99,9 +99,9 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="service">
+								<NavLinks to="contact">
 									{' '}
-									<AnimatedLink name={'Service'} />
+									<AnimatedLink name={'Contact'} />
 								</NavLinks>
 							</NavItem>
 						</motion.div>

@@ -1,8 +1,6 @@
 import React from 'react';
 import Video from '../../videos/bgvideo.mp4';
-import Typing from 'react-typing-animation';
 import Typed from 'react-typed';
-import RubberBand from 'react-reveal/RubberBand';
 import { AnimatedIcon } from '../common/AnimatedIcon';
 //import { Link } from 'react-router-dom';
 import {
@@ -12,12 +10,7 @@ import {
 	InfoContent,
 	ContentH1,
 	ContentH2,
-	SociaIconGit,
-	SociaIconFB,
-	SociaIconLink,
 	IconContainer,
-	IconLink,
-	IconDiv,
 } from './MainInfoElements';
 const InfoSection = () => {
 	return (
@@ -28,7 +21,7 @@ const InfoSection = () => {
 
 			<InfoContent>
 				<ContentH1>
-					<Typed  strings={['Hi, I am Steven Chen']} startDelay={1500} typeSpeed={100} />
+					<Typed strings={['Hi, I am Steven Chen']} startDelay={1500} typeSpeed={100} />
 				</ContentH1>
 				<ContentH2>
 					<Typed
@@ -41,7 +34,6 @@ const InfoSection = () => {
 						loop
 					/>
 				</ContentH2>
-
 				<IconContainer>
 					<AnimatedIcon />
 				</IconContainer>

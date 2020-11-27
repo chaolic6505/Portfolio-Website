@@ -2,18 +2,36 @@ import styled from 'styled-components';
 import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
-export const InfoContainer = styled.div`
-	background-image: ${({ lightBg }) => (lightBg ? Colors.Primary : '#f9f9f9')};
+export const InfoH1 = styled.h1`
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: ${Fonts.Primary};
+font-weight: 900;
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+	}
+`;
 
+export const InfoContainer = styled.div`
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: ${({ lightBg }) => (lightBg ? Colors.Primary : '#f9f9f9')};
+	margin-top: 20%;
 	@media screen and (max-width: 768px) {
 		padding: 100px 0;
+	}
+	@media screen and (max-width: 480px) {
+		margin-top: 0%;
 	}
 `;
 
 export const InfoWrapper = styled.div`
 	display: grid;
 	z-index: 1;
-	height: 900px;
+	height: 600px;
 	width: 100%;
 	max-width: 1100px;
 	margin-right: auto;
@@ -24,15 +42,14 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
 	display: grid;
+	align-items: flex-end;
 	grid-auto-columns: minmax(auto, 1fr);
-	grid-templates-areas: ${({ imgStart }) =>
-	imgStart ? `'col2 col1'` : `'col1 col2'`}
-	align-items: center;
-
+	grid-template-areas: ${({ imgStart }) =>
+		imgStart ? `'col1 col2'` : `'col2 col1'`};
 
 	@media screen and (max-width: 768px) {
-		grid-templates-areas: ${({ imgStart }) =>
-	imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2' `}
+		grid-template-areas: ${({ imgStart }) =>
+			imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2' `};
 	}
 `;
 
@@ -56,50 +73,38 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
 	color: ${Colors.H2};
-	font-size: 16px;
+	font-size: 30px;
 	line-height: 16px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin-bottom: 16px;
+	margin-bottom: 40px;
 	font-family: ${Fonts.Third};
 `;
 
 export const Heading = styled.h1`
-	margin-bottom: 24px;
+	margin-bottom: 5%;
 	font-size: 45px;
 	line-height: 1.1;
 	font-weight: 600;
 	font-family: ${Fonts.Second};
-
-	background: -webkit-linear-gradient(#eee, ${Colors.H1});
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 10%;
-	word-spacing: 10px;
-	letter-spacing: 10px;
-
+	color: ${({ lightText }) => (lightText ? '#f9f9f9' : Colors.H2)};
 	@media screen and (max-width: 480px) {
 		font-size: 30px;
 	}
 `;
 
 export const Subtitle = styled.p`
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	max-width: 440px;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 600;
 	font-family: ${Fonts.Second};
-
-	background: -webkit-linear-gradient(#eee, ${Colors.H2});
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: ${({ darkText }) => (darkText ? '#f9f9f9' : Colors.H1)};
 `;
 
 export const BtnWrapper = styled.div`
 	display: flex;
-
 	justify-content: flex-start;
 `;
 

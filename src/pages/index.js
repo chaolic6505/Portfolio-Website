@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar/';
 import MainInfo from '../components/MainInfo';
 import ProjectSection from '../components/ProjectSection';
 import Contact from '../components/Contact';
+import { contactObjOne } from '../components/Contact/Data';
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,9 @@ const Home = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Navbar toggle={toggle} />
 			<MainInfo />
+			<Contact {...contactObjOne} />
 			<ProjectSection />
-			{/* <Contact /> */}
+			
 		</>
 	);
 };

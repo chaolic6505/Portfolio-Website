@@ -73,7 +73,7 @@ LI {
 }
 @media screen and (max-width: 480px) {
 	.icon {
-		height: 20px;
-		width: 20px;
+		height: 15px;
+		width: 15px;
 	}
 }

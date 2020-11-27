@@ -4,7 +4,7 @@ import { Fonts } from '../../styles/fonts';
 
 export const SectionContainer = styled.div`
 	
-	height: 100rem;
+	height: 50rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,10 +12,11 @@ export const SectionContainer = styled.div`
 	background-image: ${Colors.Primary};
 
 	@media screen and (max-width: 768px) {
-		height: 1600px;
+		height: 1300px;
 	}
 	@media screen and (max-width: 480px) {
-		height: 1300px;
+		height: 1500px;
+		margin-top:0%;
 	}
 `;
 
@@ -33,19 +34,19 @@ export const ProjectWrapper = styled.div`
 	}
 	@media screen and (max-width: 768px) {
 		grid-template-columns: 1fr;
-		padding: 0 50%;
+		padding: 0;
 	}
 `;
 
 export const ProjectCard = styled.div`
-   background-image: ${Colors.Second};
+   background-image: ${Colors.Third};
 	display: flex;
 	flex-direction: column;
 	justify-content:flex-start;
 	align-items: center;
 	border-radius: 20px;
 	max-height:250px;
-	padding: 30px 50px;
+	padding: 20px 50px;
 	border-shadow:0 1px 3px rgba(0,0,0,2)
 	transition: all 0.4s ease-in-out;
 	

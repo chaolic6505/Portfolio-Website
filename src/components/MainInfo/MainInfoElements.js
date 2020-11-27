@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
-import { FaFacebookSquare,FaGithubSquare,FaLinkedinIn } from 'react-icons/fa';
 
 
 export const InfoContainer = styled.div`
@@ -44,18 +43,16 @@ export const VideoBg = styled.video`
 
 export const InfoContent = styled.div`
     z-index: 1;
-	max-width: 1200px;
-	min-width: 1000px;
-align-items: center;
+	min-height:350px;
+	min-width:650px;
+	align-items: center;
     position:relative;
 	display: flex;
-	padding: 0px 24px;
+	padding: 0px 0px;
 	flex-direction:column;
 	align-self:flex-self;
 	margin-top:10%;
 	
-
-		
 		@media screen and (max-width: 480px) {
 				margin-top:5%;
 			word-spacing:5px;
@@ -110,77 +107,13 @@ background: -webkit-linear-gradient(#eee, ${Colors.H2});
 		  margin-bottom:0px;
 	}
 		@media screen and (max-width: 480px) {
-			
-			min-height:50px;
+			margin-bottom:0px;
+			max-height:25px;
 		  font-size:12px;
 		  word-spacing:5px;
   letter-spacing:5px;
 	}
 `;
-
-export const SociaIconGit = styled(FaGithubSquare)`
-	color: #F1E9DA;
-	height:40px;
-	width:40px;
-	
-	&:hover{
-		color:#7CFEF0;
-		 height:45px;
-	width:45px;
-	}
-	@media screen and (max-width: 768px) {
-		 height:30px;
-	width:30px;
-	}
-		@media screen and (max-width: 480px) {
-			height:20px;
-	width:20px;
-	}
-`;
-export const SociaIconFB = styled(FaFacebookSquare)`
-	color: #F1E9DA;
-	height:40px;
-	width:40px;
-	&:hover{
-		color:#7CFEF0;
-		 height:45px;
-	width:45px;
-	}
-	@media screen and (max-width: 768px) {
-		 height:30px;
-	width:30px;
-	}
-		@media screen and (max-width: 480px) {
-			height:20px;
-	width:20px;
-	}
-`;
-export const SociaIconLink = styled(FaLinkedinIn)`
-	color: #F1E9DA;
-	height:40px;
-	width:40px;
-		&:hover{
-		color:#7CFEF0;
-		 height:45px;
-	width:45px;
-	}
-	@media screen and (max-width: 768px) {
-		 height:30px;
-	width:30px;
-	}
-		@media screen and (max-width: 480px) {
-			height:20px;
-	width:20px;
-	}
-`;
-
-export const IconLink= styled.a`
-	
-	
-`;
-
-
-
 
 
 export const IconContainer = styled.div`
