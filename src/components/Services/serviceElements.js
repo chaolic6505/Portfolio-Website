@@ -9,7 +9,9 @@ export const ServicesContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-image: ${Colors.Primary};
-
+	@media screen and (max-width: 1000px) {
+		height: 2100px;
+	}
 	@media screen and (max-width: 768px) {
 		height: 1300px;
 	}
@@ -40,15 +42,14 @@ export const ServicesWrapper = styled.div`
 `;
 
 export const ServicesCard = styled.div`
-width:400px;
-min-height:420px;
+max-width:390px;
+min-height:450px;
 	display: flex;
     justify-content:flex-start;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 10px;
 	background-image: ${Colors.Third};
-	
 	padding: 30px;
 	border-shadow:0 1px 3px rgba(0,0,0,2)
 	transition: all 0.4s ease-in-out;

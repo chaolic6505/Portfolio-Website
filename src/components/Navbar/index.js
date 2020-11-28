@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { AnimatedLink } from '../common/AnimatedLink/index';
+import { scrollTop } from '../../Funtion/ScrollToTop';
 import {
 	Nav,
 	NavbarContainer,
@@ -49,7 +50,7 @@ const NavBar = ({ toggle }) => {
 						transition={{ delay: 1.6, duration: 1.0 }}
 					>
 						<NavImageNav2>
-							<NavLogo to="/">
+							<NavLogo onClick={scrollTop}>
 								<NavImage src={myImage} />
 							</NavLogo>
 						</NavImageNav2>
@@ -63,7 +64,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="home">
+								<NavLinks onClick={scrollTop}>
 									<AnimatedLink name={'Home'} />
 								</NavLinks>
 							</NavItem>
@@ -75,7 +76,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="about">
+								<NavLinks spy={true} to="about" smooth={true} duration={800}>
 									<AnimatedLink name={'About'} />
 								</NavLinks>
 							</NavItem>
@@ -87,7 +88,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="project">
+								<NavLinks spy={true} to="project" smooth={true} duration={800}>
 									<AnimatedLink name={'Project'} />
 								</NavLinks>
 							</NavItem>
@@ -99,8 +100,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks to="service">
-									{' '}
+								<NavLinks spy={true} to="service" smooth={true} duration={800}>
 									<AnimatedLink name={'Services'} />
 								</NavLinks>
 							</NavItem>

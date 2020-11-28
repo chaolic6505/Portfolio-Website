@@ -34,7 +34,7 @@ export const NavbarContainer = styled.div`
 	}
 `;
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(LinkScroll)`
 	color: #fbfbff;
 	justify-self: flex-start;
 	cursor: pointer;

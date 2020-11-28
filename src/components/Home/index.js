@@ -10,7 +10,7 @@ import {
 	ContentH1,
 	ContentH2,
 	IconContainer,
-} from './MainInfoElements';
+} from './HomeElements';
 const InfoSection = () => {
 	return (
 		<InfoContainer>

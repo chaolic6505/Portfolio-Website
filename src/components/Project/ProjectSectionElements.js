@@ -3,20 +3,23 @@ import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
 export const SectionContainer = styled.div`
-	
 	height: 50rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: ${Colors.Primary};
-
+	@media screen and (max-width: 1000px) {
+		margin-top: 20%;
+		heigh: 2000px;
+	}
 	@media screen and (max-width: 768px) {
-		height: 1300px;
+		
+		height: 2100px;
 	}
 	@media screen and (max-width: 480px) {
-		height: 1500px;
-		margin-top:0%;
+		height: 2800px;
+		margin-top: 0%;
 	}
 `;
 
@@ -26,8 +29,7 @@ export const ProjectWrapper = styled.div`
 	grid-template-columns: 1fr 1fr;
 	margin: 0 auto;
 	align-items: center;
-	grid-gap: 5%;
-	
+	grid-gap: 4%;
 
 	@media screen and (max-width: 1000px) {
 		grid-template-columns: 1fr;
@@ -39,25 +41,20 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-   background-image: ${Colors.Third};
+	background-image: ${Colors.Third};
 	display: flex;
 	flex-direction: column;
-	justify-content:flex-start;
+	justify-content: flex-start;
 	align-items: center;
 	border-radius: 20px;
-	max-height:250px;
+	max-height: 250px;
 	padding: 20px 50px;
-	border-shadow:0 1px 3px rgba(0,0,0,2)
 	transition: all 0.4s ease-in-out;
-	
-
-	&:hover{
-		transform:scale(1.02);
-		transition:all 0.4s ease-in-out;
-		cursor:pointer;
+	&:hover {
+		transform: scale(1.02);
+		transition: all 0.4s ease-in-out;
+		cursor: pointer;
 	}
-
-
 `;
 
 export const ProjectIcon = styled.img`
@@ -71,7 +68,7 @@ export const ProjectH1 = styled.h1`
 	font-size: 2.5rem;
 	margin-bottom: 60px;
 	font-family: ${Fonts.Primary};
-font-weight: 900;
+	font-weight: 900;
 	@media screen and (max-width: 480px) {
 		font-size: 2rem;
 	}
@@ -79,8 +76,8 @@ font-weight: 900;
 
 export const ProjectH2 = styled.h2`
 	background: -webkit-linear-gradient(#eee, ${Colors.CardTitle});
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-size: 2rem;
 	margin-bottom: 10px;
 `;
@@ -88,5 +85,5 @@ export const ProjectH2 = styled.h2`
 export const ProjectP = styled.p`
 	font-size: 1rem;
 	text-align: center;
-	color:#fff;
+	color: #fff;
 `;
