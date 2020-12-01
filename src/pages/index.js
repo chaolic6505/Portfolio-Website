@@ -7,6 +7,7 @@ import Project from '../components/Project';
 import About from '../components/About';
 import { contactObjOne } from '../components/About/Data';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Main = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const Main = () => {
 			<About {...contactObjOne} />
 			<Project />
 			<Services />
+			<Footer />
 		</>
 	);
 };

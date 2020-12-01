@@ -89,7 +89,7 @@ const NavBar = ({ toggle }) => {
 						>
 							<NavItem>
 								<NavLinks spy={true} to="project" smooth={true} duration={800}>
-									<AnimatedLink name={'Project'} />
+									<AnimatedLink name={'Projects'} />
 								</NavLinks>
 							</NavItem>
 						</motion.div>

@@ -3,18 +3,18 @@ import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
 export const SectionContainer = styled.div`
-	height: 50rem;
+	height: 55rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: ${Colors.Primary};
+	
 	@media screen and (max-width: 1000px) {
 		margin-top: 20%;
 		heigh: 2000px;
 	}
 	@media screen and (max-width: 768px) {
-		
 		height: 2100px;
 	}
 	@media screen and (max-width: 480px) {

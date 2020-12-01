@@ -1,5 +1,5 @@
 import React from 'react';
-import REACTP from '../../images/react.svg';
+import REACT from '../../images/react.svg';
 import RN from '../../images/RN.png';
 import AF from '../../images/AF.png';
 import Fade from 'react-reveal/Fade';
@@ -20,7 +20,7 @@ const Services = () => {
 			<ServicesWrapper>
 				<Fade right>
 					<ServicesCard>
-						<ServicesIcon src={REACTP} />
+						<ServicesIcon src={REACT} />
 						<ServicesH2>Web Development</ServicesH2>
 						<ServicesP>
 							Both Front & Back End Development, building complex user interfaces with high

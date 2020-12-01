@@ -1,0 +1,14 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1.5;
+	text-align: center;
+	background-image: linear-gradient(to right, black 0%, #304352 100%) !important;
+	-ms-overflow-style: none;
+}

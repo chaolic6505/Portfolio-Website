@@ -1,9 +1,5 @@
-/*///////////////////////////////////////////////////
-      // Skill Bars \\ 
-  ///////////////////////////////////////////////////*/
-
 .contentContainer {
-	max-width: 555px;
+	
 	padding: 10px;
 	max-width: 350px;
 	min-width: 150px;
@@ -13,6 +9,11 @@
 }
 .skillBar {
 	margin-bottom: 1%;
+	
+}
+.barTitle{
+	display: flex;
+	justify-content: flex-start;
 }
 h4 {
 	color: #fff;

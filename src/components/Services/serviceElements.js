@@ -3,7 +3,7 @@ import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
 export const ServicesContainer = styled.div`
-	height: 50rem;
+	height: 40rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
