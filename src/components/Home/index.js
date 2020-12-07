@@ -13,14 +13,14 @@ import {
 } from './HomeElements';
 const InfoSection = () => {
 	return (
-		<InfoContainer>
+		<InfoContainer id="home">
 			<InfoBg>
 				<VideoBg playbackRate={0.75} autoPlay loop muted src={Video} type="video/mp4" />
 			</InfoBg>
 
 			<InfoContent>
 				<ContentH1>
-					<Typed strings={['Hi, I am Steven Chen']} startDelay={1500} typeSpeed={100} />
+					<Typed strings={['Hi', 'I am Steven Chen']} startDelay={1500} typeSpeed={100} />
 				</ContentH1>
 				<ContentH2>
 					<Typed
@@ -28,7 +28,7 @@ const InfoSection = () => {
 						typeSpeed={100}
 						backDelay={200}
 						backSpeed={30}
-						startDelay={3500}
+						startDelay={5000}
 						showCursor={false}
 						loop
 					/>

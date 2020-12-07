@@ -1,15 +1,18 @@
 import './Card.css';
 import React from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import P1 from '../../../images/p1.png';
+import { Carousel } from 'react-bootstrap';
+
 import {
 	ProjectCard,
 	ProjectIcon,
 	ProjectH2,
 	ProjectP,
 } from '../../Project/ProjectSectionElements';
-export const Card = ({ PS, H2, DES }) => {
+export const Card = ({ PS, H2, DES, Photo }) => {
+	console.log(Photo)
 	return (
+		
 		<Flippy flipOnHover={true} flipDirection="horizontal">
 			<FrontSide style={{ padding: '0px', borderRadius: '20px' }}>
 				<ProjectCard>
@@ -19,7 +22,25 @@ export const Card = ({ PS, H2, DES }) => {
 				</ProjectCard>
 			</FrontSide>
 			<BackSide style={{ padding: '0px', borderRadius: '20px' }}>
-				<img className="image" src={P1} alt="" />
+				<Carousel>
+					{Photo.map((o, i) => {
+						console.log(i)
+						return (
+							<Carousel.Item>
+								<img key={i} className="image" src={o} alt="" />
+							</Carousel.Item>
+						);
+					})}
+					{/* <Carousel.Item>
+						<img className="image" src={Photo} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className="image" src={Photo} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className="image" src={Photo} alt="" />
+					</Carousel.Item> */}
+				</Carousel>
 			</BackSide>
 		</Flippy>
 	);

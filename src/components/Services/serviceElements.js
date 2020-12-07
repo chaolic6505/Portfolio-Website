@@ -10,13 +10,14 @@ export const ServicesContainer = styled.div`
 	align-items: center;
 	background-image: ${Colors.Primary};
 	@media screen and (max-width: 1000px) {
-		height: 2100px;
+		height: 2200px;
 	}
 	@media screen and (max-width: 768px) {
-		height: 1300px;
+		margin-top: 40%;
+		height: 1500px;
 	}
 	@media screen and (max-width: 480px) {
-		height: 1500px;
+		height: 1700px;
 		margin-top: 0%;
 	}
 `;

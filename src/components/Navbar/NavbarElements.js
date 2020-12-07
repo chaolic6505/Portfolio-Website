@@ -5,7 +5,9 @@ import { Colors } from '../../styles/color';
 import { Fonts } from '../../styles/fonts';
 
 export const Nav = styled.nav`
-	background-image: ${Colors.Primary};
+		background-image:${({ scrollNav }) =>
+	scrollNav ? Colors.Primary : 'linear-gradient(to left, black 0%, black 100%)'};
+
 	height: 80px;
 	display: flex;
     justify-content:space-between;
@@ -102,6 +104,7 @@ export const NavLinks = styled(LinkScroll)`
 		transition: 0.1s ease-in-out;
 		text-decoration: none;
 	}
+	
 `;
 
 export const NavImageNav = styled.nav`

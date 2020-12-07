@@ -18,6 +18,7 @@ export const InfoContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom:10%;
 	background-image: ${({ lightBg }) => (lightBg ? Colors.Primary : '#f9f9f9')};
 
 	@media screen and (max-width: 768px) {

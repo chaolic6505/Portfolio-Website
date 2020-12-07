@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { AnimatedLink } from '../common/AnimatedLink/index';
-import { scrollTop } from '../../Funtion/ScrollToTop';
+import { scrollTop } from '../../Function/ScrollToTop';
 import {
 	Nav,
 	NavbarContainer,
@@ -11,7 +11,6 @@ import {
 	NavMenu,
 	NavLinks,
 	NavImage,
-	NavImageNav,
 	NavImageNav2,
 } from './NavbarElements';
 import myImage from '../../images/logo_now.png';
@@ -35,9 +34,22 @@ const divVariants = {
 };
 
 const NavBar = ({ toggle }) => {
+	const [scrollNav, setscrollNav] = useState(false);
+
+	const changeNavBackground = () => {
+		if (window.scrollY > 80) {
+			setscrollNav(true);
+		} else {
+			setscrollNav(false);
+		}
+	};
+	useEffect(() => {
+		window.addEventListener('scroll', changeNavBackground);
+	}, []);
+
 	return (
 		<>
-			<Nav>
+			<Nav scrollNav={scrollNav}>
 				<NavbarContainer>
 					<MobileIcon onClick={toggle}>
 						<FaBars />
@@ -76,7 +88,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks spy={true} to="about" smooth={true} duration={800}>
+								<NavLinks spy={true} to="about" smooth={true} duration={500} exact={true}>
 									<AnimatedLink name={'About'} />
 								</NavLinks>
 							</NavItem>
@@ -88,7 +100,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks spy={true} to="project" smooth={true} duration={800}>
+								<NavLinks spy={true} to="project" smooth={true} duration={500}>
 									<AnimatedLink name={'Projects'} />
 								</NavLinks>
 							</NavItem>
@@ -100,7 +112,7 @@ const NavBar = ({ toggle }) => {
 							animate="visible"
 						>
 							<NavItem>
-								<NavLinks spy={true} to="service" smooth={true} duration={800}>
+								<NavLinks spy={true} to="service" smooth={true} duration={500}>
 									<AnimatedLink name={'Services'} />
 								</NavLinks>
 							</NavItem>

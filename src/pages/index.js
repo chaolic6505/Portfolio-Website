@@ -8,6 +8,7 @@ import About from '../components/About';
 import { contactObjOne } from '../components/About/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
+import { scrollTop } from '../Function/ScrollToTop';
 
 const Main = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Main = () => {
 	};
 	return (
 		<>
-			<Sidebar isOpen={isOpen} toggle={toggle} />
+			<Sidebar isOpen={isOpen} toggle={toggle} scrollToTop={scrollTop} />
 			<Navbar toggle={toggle} />
 			<Home />
 			<About {...contactObjOne} />

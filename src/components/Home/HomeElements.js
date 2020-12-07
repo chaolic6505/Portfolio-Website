@@ -30,7 +30,7 @@ export const InfoBg = styled.div`
 
 export const VideoBg = styled.video`
 	width: 100%;
-	height: 100%;
+	height: 85%;
 	// background-image: ${Colors.Primary};
 	background-color: black;
 `;
@@ -49,10 +49,11 @@ export const InfoContent = styled.div`
 	margin-bottom: 15%;
 	@media screen and (max-width: 768px) {
 		min-width: 480px;
-		margin-top: 5%;
+		margin-top: 25%;
 		word-spacing: 5px;
 		letter-spacing: 5px;
 		font-size: 20px;
+		margin-bottom: 0%
 	}
 	@media screen and (max-width: 500px) {
 		margin-top: 5%;
@@ -68,8 +69,8 @@ export const ContentH1 = styled.h1`
 	text-align: center;
 	font-family: ${Fonts.Second};
 	margin-bottom: 8%;
-	word-spacing: 5px;
-	letter-spacing: 10px;
+	word-spacing: 1px;
+	letter-spacing: 5px;
 
 	@media screen and (max-width: 768px) {
 		font-size: 30px;
@@ -78,7 +79,8 @@ export const ContentH1 = styled.h1`
 		letter-spacing: 5px;
 	}
 	@media screen and (max-width: 480px) {
-		margin-bottom: 20px;
+		margin-top: 30%;
+		margin-bottom: 10%;
 		word-spacing: 5px;
 		letter-spacing: 1px;
 		letter-spacing: 5px;
@@ -91,8 +93,8 @@ export const ContentH2 = styled.h2`
 	text-align: center;
 	font-family: ${Fonts.Third};
 	min-height: 50px;
-	word-spacing: 20px;
-	letter-spacing: 10px;
+	word-spacing: 5px;
+	letter-spacing: 5px;
 	background: -webkit-linear-gradient(#eee, ${Colors.H2});
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -105,8 +107,8 @@ export const ContentH2 = styled.h2`
 	@media screen and (max-width: 480px) {
 		margin-bottom: 0px;
 		max-height: 25px;
-		font-size: 12px;
-		word-spacing: 5px;
+		font-size: 15px;
+		word-spacing: 1px;
 		letter-spacing: 5px;
 	}
 `;

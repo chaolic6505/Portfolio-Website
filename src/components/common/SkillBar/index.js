@@ -9,13 +9,13 @@ export const SkillBar = () => {
 				</div>
 			</div>
 			<div class="skillBar">
-				<h4>Vannilla JavaScript</h4>
+				<h4>React</h4>
 				<div class="skillBarContainer">
 					<div class="skillBarValue value-95"></div>
 				</div>
 			</div>
 			<div class="skillBar">
-				<h4>React</h4>
+				<h4>React Native</h4>
 				<div class="skillBarContainer">
 					<div class="skillBarValue value-90"></div>
 				</div>
