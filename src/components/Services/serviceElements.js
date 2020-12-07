@@ -9,6 +9,7 @@ export const ServicesContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-image: ${Colors.Primary};
+	
 	@media screen and (max-width: 1000px) {
 		height: 2200px;
 	}

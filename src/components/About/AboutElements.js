@@ -18,7 +18,7 @@ export const InfoContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom:10%;
+	margin-bottom: 10%;
 	background-image: ${({ lightBg }) => (lightBg ? Colors.Primary : '#f9f9f9')};
 
 	@media screen and (max-width: 768px) {
@@ -76,6 +76,7 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
+	z-index: 99;
 	min-height: 700px;
 	margin-bottom: 15px;
 	padding: 0 15px;
@@ -135,7 +136,7 @@ export const Subtitle = styled.p`
 export const BtnWrapper = styled.div`
 	margin-top: 6%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 `;
 
 export const ImgWrapper = styled.div`

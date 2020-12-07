@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../ButtonElement';
 import { SkillBar } from '../common/SkillBar';
 import Fade from 'react-reveal/Fade';
+import { Certificate } from '../Certificate';
 import {
 	InfoContainer,
 	InfoWrapper,
@@ -33,6 +34,7 @@ const About = ({
 	description,
 	primary,
 }) => {
+	const [toggler, setToggler] = useState(false);
 	return (
 		<>
 			<InfoContainer lightBg={lightBg} id={id}>
@@ -63,6 +65,13 @@ const About = ({
 										>
 											Let's chat
 										</Button>
+										<Button
+											onClick={() => setToggler(!toggler)}
+											dark={dark}
+											primary={primary ? 1 : 0}
+										>
+											Certificates
+										</Button>
 									</BtnWrapper>
 								</TextWrapper>
 							</Column1>
@@ -76,6 +85,7 @@ const About = ({
 						</Fade>
 					</InfoRow>
 				</InfoWrapper>
+				<Certificate toggler={toggler} />
 			</InfoContainer>
 		</>
 	);

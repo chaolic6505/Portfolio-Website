@@ -10,7 +10,7 @@ import {
 	ProjectP,
 } from '../../Project/ProjectSectionElements';
 export const Card = ({ PS, H2, DES, Photo }) => {
-	console.log(Photo)
+
 	return (
 		
 		<Flippy flipOnHover={true} flipDirection="horizontal">
@@ -24,22 +24,14 @@ export const Card = ({ PS, H2, DES, Photo }) => {
 			<BackSide style={{ padding: '0px', borderRadius: '20px' }}>
 				<Carousel>
 					{Photo.map((o, i) => {
-						console.log(i)
+			
 						return (
 							<Carousel.Item>
 								<img key={i} className="image" src={o} alt="" />
 							</Carousel.Item>
 						);
 					})}
-					{/* <Carousel.Item>
-						<img className="image" src={Photo} alt="" />
-					</Carousel.Item>
-					<Carousel.Item>
-						<img className="image" src={Photo} alt="" />
-					</Carousel.Item>
-					<Carousel.Item>
-						<img className="image" src={Photo} alt="" />
-					</Carousel.Item> */}
+					
 				</Carousel>
 			</BackSide>
 		</Flippy>

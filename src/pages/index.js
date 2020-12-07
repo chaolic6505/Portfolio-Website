@@ -8,6 +8,7 @@ import About from '../components/About';
 import { contactObjOne } from '../components/About/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
+
 import { scrollTop } from '../Function/ScrollToTop';
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
 			<About {...contactObjOne} />
 			<Project />
 			<Services />
+		
 			<Footer />
 		</>
 	);
