@@ -7,7 +7,7 @@ export const contactObjOne = {
 	headline:
 		'Mobile and Web Applications developer. Demonstrated ability developing with Node.js, React and Python.',
 	description:
-		'Hi, I am Steven Chen ! I am a Vancouver based Full-Stack Developer & UX/UX Designer focused on creating clean, responsive website and React Native application!',
+		'Hi, I am Steven Chen ! I am a Vancouver based Full-Stack Developer & UX/UX Designer focused on creating clean, responsive websites and React Native applications!',
 	buttonLabel: 'Contact',
 	imgStart: 'false',
 	img: null,
