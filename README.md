@@ -1,7 +1,9 @@
 # Personal Portfolio Website
 
-
-## Available Scripts
+## What I use
+* Front-end : React - stlyled components
+* Special Effect: Framer Motion
+* Logo Design: Affinity Designer
 
 In the project directory, you can run:
 
