@@ -3,6 +3,7 @@ import { Button } from '../ButtonElement';
 import { SkillBar } from '../common/SkillBar';
 import Fade from 'react-reveal/Fade';
 import { Certificate } from '../Certificate';
+import { SkillBarOBJ } from '../common/SkillBar/Data';
 import {
 	InfoContainer,
 	InfoWrapper,
@@ -79,7 +80,7 @@ const About = ({
 						<Fade right delay={500}>
 							<Column2>
 								<ImgWrapper>
-									<SkillBar />
+									<SkillBar {...SkillBarOBJ} />
 								</ImgWrapper>
 							</Column2>
 						</Fade>

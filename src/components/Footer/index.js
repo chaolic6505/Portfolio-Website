@@ -6,7 +6,8 @@ const Footer = () => {
 	return (
 		<div className="footerDiv">
 			<p className="footerText">
-				Chao-Li Chen - <i className="fa">&#xf1f9;</i> 2020
+				Chao-Li Chen  <i className="fa">&#xf1f9;</i>
+				<span> {new Date().getFullYear()}</span>
 			</p>
 		</div>
 	);
