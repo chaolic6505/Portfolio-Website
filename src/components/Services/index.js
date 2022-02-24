@@ -42,7 +42,7 @@ const Services = () => {
 						<ServicesIcon src={RN} />
 						<ServicesH2>Mobile Application</ServicesH2>
 						<ServicesP>
-							Developing native (iOS) and cross-platform mobile apps with React Native
+							Developing native (IOS && Android) and cross-platform mobile apps with React Native
 						</ServicesP>
 					</ServicesCard>
 				</Fade>
